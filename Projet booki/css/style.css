@@ -1,0 +1,188 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-top: 25px;
+    padding-left: 45px;       
+}
+#logo{
+    height: 55px;   
+}
+
+ul.nav{
+    display: flex;
+}
+.hebergements, .activites{
+    width: 200px;
+    text-align: center;
+    padding-top: 40px;
+
+}  
+.hebergements:hover, .activites:hover {
+    border-top: 3px solid #0065FC;;
+    color: #0065FC;  
+}
+.hebergements:hover a, .activites:hover a{
+        color: #0065FC;
+    }
+*{ /*: Applique une police de caractères Raleway, une boîte de dimension (box-sizing) de type border-box, une marge et un remplissage nul à tous les éléments.*/
+    font-family: 'Raleway', sans-serif; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 320px;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+/* Main - corps de la page 
+    /* Partie Recherche */
+    h1{
+        font-size: 22px;
+        font-weight: bold;
+        margin: 20px;
+    }
+    #recherche{
+        padding-left: 46px;
+        padding-top: 30px;
+    }
+    #recherche p{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-weight: 500; /*pour mettre la police entre normal et gras */
+    }
+    form {
+        display: flex;
+        margin-top: 0;
+    }
+    input {
+        padding: 15px;
+        width: 235px;
+        border: 1px solid #F2F2F2;
+        color: #000000;
+        font-weight: bold;
+        font-size: 18px;
+        outline: none; /* Pour supprimer le contour */
+    }
+    input[type=text]:focus {
+        border: 1px solid #F2F2F2;
+    }
+    /* Modification de la police dans le champs de recherche */
+    ::placeholder {
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        opacity: 1; /* pour foncer la couleur de la police dans firefox */
+    }
+    /* Mise en forme du bouton rechercher sur ordinateur et tablette */
+    .bouton_research {
+        background-color: #0065FC;
+        color: white;
+        width: 133px;
+        border: 0px solid #F2F2F2;
+        border-radius: 0px 18px 18px 0px;
+        padding: 15px;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .bouton_research:hover, .bouton_research:focus, .bouton_research:active{
+        border: 1px solid #DEEBFF;
+        cursor: pointer;
+    }
+    /* Icône barre de recherche */
+    .fa-location-dot {
+        font-size: 17px; /* Dimensionnement de l'icône "localisation" */
+        border: 2px solid #F2F2F2;
+        background-color: #F2F2F2;
+        padding: 15px;
+        padding-left: 18px;
+        border-radius: 18px 0px 0px 18px;
+    }
+/* Partie filtres et info */
+    #filtres_info{
+        padding-left: 46px;
+        padding-top: 30px;
+    }
+    #titre_filtres{
+        padding-top: 13px;
+    }
+    #filtres{
+        display: flex; /*éléments sur une même ligne.... */
+        flex-wrap: wrap; /*...avec possibilité de retour à la ligne*/
+        font-weight: bold;
+        font-size: 18px;
+        column-gap: 20px;
+    }
+    #filtres_categories {
+        display: flex;
+        margin-left: -33px;
+    }
+    .F_filtre{
+        border: 3px solid #F2F2F2;
+        border-radius: 30px;
+        margin-left: 40px;
+        padding: 11px;
+        padding-right: 15px;
+        padding-left: 35px;
+    }
+    .F_filtre:hover, .F_filtre:focus, .F_filtre:active{
+        color: #0065FC;
+        cursor: pointer;
+    }
+    .icone_filtres{
+        width: 47px;
+        height: 47px;
+        font-size: 20px;
+        color: #0065FC;
+        background-color: #DEEBFF;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        padding: 14px;
+        position: absolute;
+        /* pour positionner le disque icône au bon endroit */
+        margin-left: -45px;
+        margin-top: -13px;
+    }
+    .fa-money-bill-wave{
+        padding-left: 13px; 
+    }
+    .fa-child-reaching{
+        padding-left: 17px; 
+    }
+    #filtres p{
+        padding-left: 10px;
+    }
+    /* Partie info */
+    .fa-info {
+        color: #0065FC;
+        border: 3px solid #F2F2F2;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        font-size: 12px;
+        padding-top: 2px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-right: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    #info{
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-weight: 500;
+    }
+    #texte_info{
+        padding-top: 4px;
+        padding-left: 3px;
+        font-size: 16px;
+    }
